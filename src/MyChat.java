@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class MyChat implements Runnable{
     ServerSocket serverSocket;
-
     ArrayList<Client> clients = new ArrayList<>();
+    ArrayList<String> names = new ArrayList<>();
     MyChat() throws IOException {
         serverSocket = new ServerSocket(1234);
     }
